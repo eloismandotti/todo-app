@@ -1,0 +1,16 @@
+<div class="box">
+  <!-- <p *ngFor="let task of tasksList">ciao</p> -->
+  <div *ngIf="tasksList.length == 0">
+    <p>Opps, non ci sono Task</p>
+  </div>
+  <div *ngFor="let task of tasksList">
+    <p *ngIf="!task.completed">- {{task.title}} 
+      <span *ngIf="!task.completed" class="row-button" (click)="completeTask(task)">✅</span>
+      <span *ngIf="!task.completed" class="row-button" (click)="removeTask(task)">🗑️</span>
+    </p>
+  </div>
+</div>
+
+<div class="bottom-box">
+  <app-add-task></app-add-task>
+</div>

@@ -1,0 +1,15 @@
+.box {
+  margin: auto;
+  width: 60%;
+  height: 400px;
+  border: 1px solid rgb(75, 75, 75);
+
+  p {
+    text-align: center;
+  
+    .row-button {
+      cursor: pointer;
+    }
+  }
+  
+}

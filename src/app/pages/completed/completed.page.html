@@ -1,0 +1,7 @@
+<div class="box">
+  <div *ngIf="tasksList.length == 0">
+    <p>Opps, non ci sono Task</p>
+  </div>  
+  <div *ngFor="let task of tasksList">
+    <p *ngIf="task.completed">- {{task.title}}</p>
+</div>
